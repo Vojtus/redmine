@@ -1,0 +1,3 @@
+<p>
+  <%= form.select :author_id, options_from_collection_for_select(User.all, :id, :name, @project.author_id), include_blank: true %>
+</p>
